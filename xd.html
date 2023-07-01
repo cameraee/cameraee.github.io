@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jogo Clicker</title>
+  <style>
+    #clickArea {
+      width: 200px;
+      height: 200px;
+      background-color: #ccc;
+      text-align: center;
+      line-height: 200px;
+      font-size: 24px;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    var score = 0;
+
+    function incrementScore() {
+      score++;
+      document.getElementById('score').innerHTML = score;
+    }
+  </script>
+</head>
+<body>
+  <h1>Jogo Clicker</h1>
+  <div id="clickArea" onclick="incrementScore()">Clique Aqui!</div>
+  <h2>Pontuação: <span id="score">0</span></h2>
+</body>
+</html>
